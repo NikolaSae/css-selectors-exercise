@@ -1,3 +1,4 @@
+
 ul li:nth-of-type(even) {
 	color: green;
 }
@@ -26,6 +27,33 @@ ul li:last-of-type > a {
 	color: blue;
 }
 
-ul li:first-of-type > a:hover {
+ul li:nth-of-type(5) > a:hover {
 	color: gray;
+}
+li:nth-child(3n+2) {
+	list-style-type: none;
+}
+input[type="text"]:focus {
+	background: gray;
+}
+div:first-of-type > input:focus {
+	color: green;
+}
+div:nth-of-type(2) > input:focus {
+	color: blue;
+}
+input[type="password"]:focus {
+	color: white;
+}
+
+input[type="email"]::-moz-selection {
+	background-color: yellow;
+	color: purple;
+}
+input[type="email"]::selection {
+	background-color: yellow;
+	color: purple;
+}
+div:last-of-type > input:hover {
+	color: red;
 }
