@@ -1,31 +1,42 @@
-
+/*Every even list item should have text color of green*/
 ul li:nth-of-type(even) {
 	color: green;
 }
 
+/*The third list item should have a background color of light blue;*/
 ul li:nth-of-type(3) {
 	background-color: lightblue;
 }
 
+/*The first list item should have a top border, 1px in width, solid and green;*/
 ul li:first-of-type {
 	border-top: 1px solid green;
 }
 
+/*The last list item should have a bottom border 5px in width, dotted and blue;*/
 ul li:last-of-type {
 	border-bottom: 5px dotted blue;
 }
 
+/*Third and fifth list items' anchor should be colored in red;*/
+li:nth-last-of-type(2n+3) > a {
+	color: red;
+}
+ul li:first-of-type > a {
+	color: blue;
+}
+/*Third and fifth list items' anchor should be colored in red
 ul > li:nth-of-type(odd) > a {
 	color: red;
 }
-
 ul li:first-of-type > a {
 	color: blue;
 }
 
+
 ul li:last-of-type > a {
 	color: blue;
-}
+}*/
 
 ul li:nth-of-type(5) > a:hover {
 	color: gray;
