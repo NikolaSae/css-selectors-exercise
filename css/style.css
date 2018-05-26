@@ -25,38 +25,49 @@ li:nth-last-of-type(2n+3) > a {
 ul li:first-of-type > a {
 	color: blue;
 }
-/*Third and fifth list items' anchor should be colored in red
+
+/*Third and fifth list items' anchor should be colored in red. Moze i ovako.
 ul > li:nth-of-type(odd) > a {
 	color: red;
 }
 ul li:first-of-type > a {
 	color: blue;
 }
-
-
 ul li:last-of-type > a {
 	color: blue;
 }*/
 
+/*Fifth list items' anchor should turn gray when hovered on*/
 ul li:nth-of-type(5) > a:hover {
 	color: gray;
 }
+
+/*Second and fifth list item should lose the bullet points;*/
 li:nth-child(3n+2) {
 	list-style-type: none;
 }
+
+/*All regular text type input fields should have a gray background when focused on*/
 input[type="text"]:focus {
 	background: gray;
 }
+
+/*The first name input field should have green text color when focused on;*/
 div:first-of-type > input:focus {
 	color: green;
 }
+
+/*The last name input field should have blue text color when focused on;*/
 div:nth-of-type(2) > input:focus {
 	color: blue;
 }
+
+/*Password type input field should have invisible text when typed in; Ovo je najblize resenje koje sam nasao*/
 input[type="password"]:focus {
 	color: white;
 }
 
+/*When a selection is made inside the email type input field, the selection background should turn yellow and the text color purple; prvi deo koda je za mozilu*/
 input[type="email"]::-moz-selection {
 	background-color: yellow;
 	color: purple;
@@ -65,6 +76,8 @@ input[type="email"]::selection {
 	background-color: yellow;
 	color: purple;
 }
+
+/*Submit type input should have red text color when hovered on*/
 div:last-of-type > input:hover {
 	color: red;
 }
